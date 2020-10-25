@@ -11,15 +11,16 @@ dugmeMalo.addEventListener("click", ()=>{
     } else if(vrijednost.value != "") {
         ispod.style.visibility = "hidden";
         var lista = document.createElement("li");
+        var imePosla = document.createElement("p");
         var dugmeZaListe = document.createElement("button");
         dugmeZaListe.classList.add("dugmeListeStyle")
         dugmeZaListe.innerText = "Izbrisi";
         lista.classList.add("styleListe");
         let text = document.createTextNode(vrijednost.value);
-        lista.appendChild(text);
+        imePosla.innerText = vrijednost.value;
+        lista.appendChild(imePosla);
         lista.appendChild(dugmeZaListe);
         listaStvari.appendChild(lista);
-
         vrijednost.value = "";
         dugmeZaListe.addEventListener("click", ()=> {
             listaStvari.removeChild(lista);

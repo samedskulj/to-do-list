@@ -65,11 +65,36 @@ cursor: pointer;
 }
 
 .styleListe {
-    display: flex;
+
     margin-bottom: 20px;
     font-size: 1.2rem;
     list-style: none;
+    margin-right: 50px;
 }
+
+.styleListe button {
+    width: 150px;
+    height: 35px;
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    text-align: center;
+    font-size: 0.5rem;
+    border: 1px solid #494949 !important;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.styleListe button:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
 
 .dugmeListeStyle {
     margin-top: 3.5px;
