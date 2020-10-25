@@ -25,6 +25,7 @@ dugmeMalo.addEventListener("click", ()=>{
             listaStvari.removeChild(lista);
         })
          brisanjeListe.addEventListener("click", ()=> {
+            ispod.style.visibility = "hidden";
              listaStvari.removeChild(lista);
          })
     }   
