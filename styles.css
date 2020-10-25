@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+.container {
+ position: fixed;
+top: 50%;
+ left: 50%;
+
+ /* bring your own prefixes */
+transform: translate(-50%, -50%);
+max-width: 480px;
+width: 90%;
+background-color: #ffffff;
+padding: 40px;
+border-radius: 4px;
+color: #505e6c;
+box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+.naslovi {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 30px;
+ font-size: 1.4rem;
+}
+
+.ispod {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+
+.dugme, .brisanje {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    }
+
+.dugme:hover, .brisanje:hover{
+    color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+cursor: pointer;
+     }
+
+.button_cont {
+  display: flex;
+}
+
+.form-group {
+    font-size: 1.3rem;
+}
+
+.styleListe {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.dugmeListeStyle {
+    margin-top: 3.5px;
+    width: 50px;
+    height: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
